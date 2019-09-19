@@ -27,8 +27,8 @@ pipeline {
 
     post {
             always {
-                archiveArtifacts artifacts: 'target/*.jar', fingerprint: true
-                junit 'reports/*.xml'
+                archiveArtifacts artifacts: '/var/jenkins_home/workspace/welcome/target/*.jar', fingerprint: true
+                junit '/var/jenkins_home/workspace/welcome/reports/*.xml'
             }
     }
 }
