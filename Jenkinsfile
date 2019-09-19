@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Prepare') {
             steps {
-                sh 'echo hello'
+                sh '/home/ubuntu/welcome/backup.sh'
             }
         }
         stage('Build') {
@@ -18,7 +18,7 @@ pipeline {
         }
         stage('Deploy') {
             steps {
-                sh '/home/ubuntu/welcome/start.sh'
+                sh '/home/ubuntu/welcome/restart.sh'
             }
         }
     }
