@@ -3,7 +3,6 @@ pipeline {
     stages {
         stage('Prepare') {
             steps {
-                # sh '/home/ubuntu/welcome/backup.sh'
                 sh 'echo hello'
             }
         }
