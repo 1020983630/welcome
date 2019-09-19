@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                sh 'echo build'
+                sh 'mvn clean package'
             }
         }
         stage('Test') {
@@ -13,7 +13,7 @@ pipeline {
         }
         stage('Deploy') {
             steps {
-                sh 'echo deploy'
+                sh '/home/ubuntu/welcome/start.sh'
             }
         }
     }
